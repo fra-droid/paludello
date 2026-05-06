@@ -3,7 +3,82 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>PALUDELLO ░ menta della palude ░ AVELLINO</title>
+
+<title>Paludello — Liquore Artigianale alla Menta · Avellino</title>
+<meta name="description" content="Paludello è un liquore artigianale alla menta prodotto ad Avellino. 28% vol, 500 ml, solo 144 bottiglie. Niente storie di nonni. Solo erbe, alcool e sei mesi di pazienza." />
+<meta name="author" content="Paludello" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#1c1c17" />
+
+<!-- Geo / local SEO -->
+<meta name="geo.region" content="IT-AV" />
+<meta name="geo.placename" content="Avellino" />
+
+<!-- Canonical — update when you have a custom domain -->
+<link rel="canonical" href="https://paludello.vercel.app/" />
+
+<!-- Favicon: frog emoji as inline SVG -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>𓆏</text></svg>" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://paludello.vercel.app/" />
+<meta property="og:site_name" content="Paludello" />
+<meta property="og:locale" content="it_IT" />
+<meta property="og:title" content="Paludello — Liquore Artigianale alla Menta · Avellino" />
+<meta property="og:description" content="Liquore alla menta fatto ad Avellino. 500 ml, 28% vol, 144 bottiglie. Niente marketing. Solo palude." />
+<meta property="og:image" content="https://paludello.vercel.app/assets/paludello-label.png" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="1024" />
+<meta property="og:image:alt" content="Etichetta Paludello — Liquore alla Menta della Palude, Avellino" />
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Paludello — Liquore Artigianale alla Menta · Avellino" />
+<meta name="twitter:description" content="Liquore alla menta fatto ad Avellino. 500 ml, 28% vol, 144 bottiglie. Niente marketing. Solo palude." />
+<meta name="twitter:image" content="https://paludello.vercel.app/assets/paludello-label.png" />
+<meta name="twitter:image:alt" content="Etichetta Paludello — Liquore alla Menta della Palude, Avellino" />
+
+<!-- JSON-LD: Product + Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Paludello",
+      "description": "Liquore artigianale alla menta prodotto ad Avellino. Erbe raccolte in un fosso, alcool buono, sei mesi di pazienza. 28% vol, 500 ml. Solo 144 bottiglie.",
+      "brand": { "@type": "Brand", "name": "Paludello" },
+      "image": "https://paludello.vercel.app/assets/paludello-label.png",
+      "category": "Liquore alla menta",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "38",
+        "availability": "https://schema.org/LimitedAvailability",
+        "url": "https://paludello.vercel.app/"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "Paludello",
+      "url": "https://paludello.vercel.app/",
+      "logo": "https://paludello.vercel.app/assets/paludello-label.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Avellino",
+        "addressRegion": "Campania",
+        "addressCountry": "IT"
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Preload LCP image -->
+<link rel="preload" as="image" href="assets/paludello-label.png" />
+
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Rubik+Mono+One&family=Permanent+Marker&family=Caveat:wght@400;700&family=Bungee+Shade&display=swap" rel="stylesheet">
@@ -667,7 +742,7 @@
 </head>
 <body>
 
-<div class="zine">
+<main class="zine">
 
   <!-- ambient swamp layer -->
   <div class="ambient" aria-hidden="true">
@@ -697,7 +772,7 @@
       <!-- THE LABEL — torn out, taped on -->
       <div class="label-cut">
         <div class="tape tape-l"></div>
-        <img src="assets/paludello-label.png" alt="Paludello — etichetta strappata" />
+        <img src="assets/paludello-label.png" alt="Paludello liquore alla menta della palude — etichetta artigianale, Avellino" fetchpriority="high" />
         <div class="tape tape-r"></div>
       </div>
 
@@ -822,9 +897,12 @@
       bevi responsabilmente o non bere affatto · vietato ai minori di 18 anni<br/>
       fatto a mano da una persona sola
     </p>
+    <address style="font-style:normal;margin-top:12px;opacity:.6;font-family:'Special Elite',monospace;font-size:12px;letter-spacing:.1em;">
+      Paludello · <span itemprop="addressLocality">Avellino</span>, <span itemprop="addressRegion">Campania</span>, <span itemprop="addressCountry">Italia</span>
+    </address>
   </footer>
 
-</div>
+</main>
 
 <button class="ambient-btn" id="ambientBtn" aria-pressed="false" title="ambient palude on/off">🐸 audio palude</button>
 
